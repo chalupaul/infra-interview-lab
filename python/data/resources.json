@@ -2,7 +2,7 @@
   "meta": {
     "account_id": "123456789012",
     "generated_at": "2026-03-10T08:00:00Z",
-    "total_resources": 28
+    "total_resources": 250
   },
   "resources": [
     {
@@ -381,6 +381,3235 @@
       "tags": {
         "owner": "platform-team",
         "environment": "prod"
+      }
+    },
+    {
+      "id": "i-3bae1603803a",
+      "type": "ec2",
+      "name": "dev-proxy-32",
+      "state": "stopped",
+      "region": "eu-central-1",
+      "instance_type": "t3.micro",
+      "cost_per_hour": 0.0104,
+      "launched_at": "2025-07-28T15:56:45Z",
+      "tags": {
+        "owner": "bob@example.com",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "i-643c16554071",
+      "type": "ec2",
+      "name": "staging-gateway-90",
+      "state": "stopped",
+      "region": "us-east-2",
+      "instance_type": "r5.xlarge",
+      "cost_per_hour": 0.252,
+      "launched_at": "2024-08-22T15:56:45Z",
+      "tags": {
+        "owner": "ml-team",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "lb-1314a553",
+      "type": "alb",
+      "name": "web-alb-b034",
+      "state": "active",
+      "region": "eu-west-1",
+      "instance_type": null,
+      "cost_per_hour": 0.008,
+      "launched_at": "2024-03-22T15:56:45Z",
+      "tags": {
+        "environment": "prod",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "i-74eb35c0dc61",
+      "type": "ec2",
+      "name": "staging-proxy-21",
+      "state": "stopped",
+      "region": "eu-west-2",
+      "instance_type": "c5.large",
+      "cost_per_hour": 0.085,
+      "launched_at": "2025-08-05T15:56:45Z",
+      "tags": {
+        "environment": "sandbox",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "fn-695f27cd",
+      "type": "lambda",
+      "name": "staging-worker-2b8b",
+      "state": "active",
+      "region": "us-west-1",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2024-06-06T15:56:45Z",
+      "tags": {
+        "owner": "frontend-team",
+        "environment": "sandbox",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "i-48fa1ecc5420",
+      "type": "ec2",
+      "name": "ml-68",
+      "state": "terminated",
+      "region": "eu-west-1",
+      "instance_type": "m5.xlarge",
+      "cost_per_hour": 0.192,
+      "launched_at": "2024-10-14T15:56:45Z",
+      "tags": {
+        "owner": "frontend-team",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "db-8c8050eed4",
+      "type": "rds",
+      "name": "staging-aurora-03",
+      "state": "available",
+      "region": "us-west-2",
+      "instance_type": "db.r6g.large",
+      "cost_per_hour": 0.24,
+      "launched_at": "2024-08-07T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "environment": "prod"
+      }
+    },
+    {
+      "id": "fn-4d638b34",
+      "type": "lambda",
+      "name": "dev-processor-c278",
+      "state": "active",
+      "region": "eu-west-2",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2024-12-17T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "environment": "sandbox",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "db-9331a3ed13",
+      "type": "rds",
+      "name": "staging-mysql-01",
+      "state": "stopped",
+      "region": "us-west-2",
+      "instance_type": "db.r6g.large",
+      "cost_per_hour": 0.24,
+      "launched_at": "2024-09-04T15:56:45Z",
+      "tags": {
+        "owner": "frontend-team",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "fn-67baf165",
+      "type": "lambda",
+      "name": "staging-notifier-c316",
+      "state": "active",
+      "region": "us-east-2",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2025-06-29T15:56:45Z",
+      "tags": {
+        "owner": "secops",
+        "environment": "staging",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "fn-cd1a801c",
+      "type": "lambda",
+      "name": "staging-worker-27d1",
+      "state": "active",
+      "region": "us-west-2",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2025-09-21T15:56:45Z",
+      "tags": {
+        "owner": "alice@example.com",
+        "environment": "sandbox",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "db-06ec4bbca7",
+      "type": "rds",
+      "name": "prod-postgres-07",
+      "state": "available",
+      "region": "eu-west-1",
+      "instance_type": "db.m5.large",
+      "cost_per_hour": 0.171,
+      "launched_at": "2025-07-31T15:56:45Z",
+      "tags": {
+        "owner": "platform-team"
+      }
+    },
+    {
+      "id": "cache-98d2f1",
+      "type": "elasticache",
+      "name": "prod-session-cache-01",
+      "state": "available",
+      "region": "us-east-2",
+      "instance_type": "cache.t3.micro",
+      "cost_per_hour": 0.017,
+      "launched_at": "2024-07-09T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "environment": "staging",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "i-1a954a542a7e",
+      "type": "ec2",
+      "name": "prod-batch-80",
+      "state": "running",
+      "region": "us-east-1",
+      "instance_type": "c5.2xlarge",
+      "cost_per_hour": 0.34,
+      "launched_at": "2024-11-26T15:56:45Z",
+      "tags": {
+        "owner": "dave@example.com",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "i-eee52db9fa0d",
+      "type": "ec2",
+      "name": "dev-batch-17",
+      "state": "running",
+      "region": "us-east-2",
+      "instance_type": "c5.large",
+      "cost_per_hour": 0.085,
+      "launched_at": "2025-10-24T15:56:45Z",
+      "tags": {
+        "owner": "ml-team",
+        "environment": "prod",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "cache-35ad84",
+      "type": "elasticache",
+      "name": "staging-session-cache-05",
+      "state": "available",
+      "region": "us-east-2",
+      "instance_type": "cache.t3.small",
+      "cost_per_hour": 0.034,
+      "launched_at": "2024-05-30T15:56:45Z",
+      "tags": {
+        "owner": "alice@example.com",
+        "environment": "dev",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "i-f27b81fb2058",
+      "type": "ec2",
+      "name": "staging-gateway-82",
+      "state": "stopped",
+      "region": "us-west-1",
+      "instance_type": "m5.large",
+      "cost_per_hour": 0.096,
+      "launched_at": "2026-01-27T15:56:45Z",
+      "tags": {
+        "owner": "ml-team",
+        "environment": "dev",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "bucket-state-31ce",
+      "type": "s3",
+      "name": "state-31ce",
+      "state": "available",
+      "region": "eu-central-1",
+      "instance_type": null,
+      "cost_per_hour": 0.023,
+      "launched_at": "2024-06-13T15:56:45Z",
+      "tags": {
+        "owner": "frontend-team",
+        "environment": "staging",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "i-ec6ab32b6073",
+      "type": "ec2",
+      "name": "staging-web-95",
+      "state": "stopped",
+      "region": "eu-west-2",
+      "instance_type": "m5.xlarge",
+      "cost_per_hour": 0.192,
+      "launched_at": "2025-05-02T15:56:45Z",
+      "tags": {
+        "owner": "secops",
+        "environment": "staging",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "db-f4a6f8f1f2",
+      "type": "rds",
+      "name": "staging-warehouse-02",
+      "state": "available",
+      "region": "us-east-1",
+      "instance_type": "db.m5.large",
+      "cost_per_hour": 0.171,
+      "launched_at": "2025-11-19T15:56:45Z",
+      "tags": {
+        "owner": "dave@example.com",
+        "environment": "sandbox",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "bucket-cache-tmp-1e30",
+      "type": "s3",
+      "name": "cache-tmp-1e30",
+      "state": "available",
+      "region": "eu-central-1",
+      "instance_type": null,
+      "cost_per_hour": 0.023,
+      "launched_at": "2026-03-09T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com"
+      }
+    },
+    {
+      "id": "db-9a1e8a5b83",
+      "type": "rds",
+      "name": "prod-replica-06",
+      "state": "stopped",
+      "region": "us-west-1",
+      "instance_type": "db.r6g.2xlarge",
+      "cost_per_hour": 0.96,
+      "launched_at": "2024-06-18T15:56:45Z",
+      "tags": {
+        "owner": "dave@example.com",
+        "environment": "dev",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "cache-69a773",
+      "type": "elasticache",
+      "name": "staging-session-cache-02",
+      "state": "available",
+      "region": "us-west-1",
+      "instance_type": "cache.t3.micro",
+      "cost_per_hour": 0.017,
+      "launched_at": "2024-05-05T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "environment": "dev",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "lb-c20f9c7e",
+      "type": "alb",
+      "name": "internal-alb-1f34",
+      "state": "active",
+      "region": "us-west-2",
+      "instance_type": null,
+      "cost_per_hour": 0.008,
+      "launched_at": "2024-03-27T15:56:45Z",
+      "tags": {
+        "owner": "alice@example.com",
+        "environment": "sandbox",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "db-3cb78e1278",
+      "type": "rds",
+      "name": "prod-postgres-07",
+      "state": "stopped",
+      "region": "eu-west-2",
+      "instance_type": "db.t3.large",
+      "cost_per_hour": 0.136,
+      "launched_at": "2024-12-12T15:56:45Z",
+      "tags": {
+        "owner": "dave@example.com",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "cache-7cd4c7",
+      "type": "elasticache",
+      "name": "dev-memcached-04",
+      "state": "available",
+      "region": "eu-west-1",
+      "instance_type": "cache.r6g.xlarge",
+      "cost_per_hour": 0.332,
+      "launched_at": "2024-12-15T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "environment": "dev",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "db-23bb168636",
+      "type": "rds",
+      "name": "dev-warehouse-02",
+      "state": "stopped",
+      "region": "us-east-1",
+      "instance_type": "db.r6g.2xlarge",
+      "cost_per_hour": 0.96,
+      "launched_at": "2024-07-29T15:56:45Z",
+      "tags": {
+        "owner": "alice@example.com",
+        "environment": "sandbox",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "bucket-exports-tfstate-8bce",
+      "type": "s3",
+      "name": "exports-tfstate-8bce",
+      "state": "available",
+      "region": "ap-southeast-1",
+      "instance_type": null,
+      "cost_per_hour": 0.023,
+      "launched_at": "2025-07-29T15:56:45Z",
+      "tags": {
+        "owner": "ml-team",
+        "environment": "sandbox",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "i-27290690a270",
+      "type": "ec2",
+      "name": "data-93",
+      "state": "stopped",
+      "region": "eu-west-2",
+      "instance_type": "m5.xlarge",
+      "cost_per_hour": 0.192,
+      "launched_at": "2025-08-06T15:56:45Z",
+      "tags": {
+        "owner": "bob@example.com",
+        "environment": "dev",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "fn-f5acacf3",
+      "type": "lambda",
+      "name": "staging-scheduler-4108",
+      "state": "active",
+      "region": "us-east-1",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2024-06-12T15:56:45Z",
+      "tags": {
+        "owner": "frontend-team",
+        "environment": "staging",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "fn-9fbc249e",
+      "type": "lambda",
+      "name": "dev-processor-f745",
+      "state": "active",
+      "region": "eu-central-1",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2025-01-28T15:56:45Z",
+      "tags": {
+        "owner": "secops",
+        "environment": "prod",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "db-c908a1a067",
+      "type": "rds",
+      "name": "dev-reporting-02",
+      "state": "stopped",
+      "region": "eu-west-2",
+      "instance_type": "db.t3.medium",
+      "cost_per_hour": 0.068,
+      "launched_at": "2024-05-29T15:56:45Z",
+      "tags": {
+        "owner": "bob@example.com",
+        "environment": "staging",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "i-c876b4dd1e37",
+      "type": "ec2",
+      "name": "dev-build-79",
+      "state": "stopped",
+      "region": "eu-central-1",
+      "instance_type": "r5.large",
+      "cost_per_hour": 0.126,
+      "launched_at": "2025-03-31T15:56:45Z",
+      "tags": {
+        "owner": "platform-team",
+        "environment": "sandbox",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "i-5eb40f1b7cba",
+      "type": "ec2",
+      "name": "dev-batch-34",
+      "state": "stopped",
+      "region": "ap-southeast-1",
+      "instance_type": "m5.2xlarge",
+      "cost_per_hour": 0.384,
+      "launched_at": "2026-02-21T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "environment": "dev",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "fn-f85743b5",
+      "type": "lambda",
+      "name": "staging-notifier-a585",
+      "state": "active",
+      "region": "ap-northeast-1",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2024-04-03T15:56:45Z",
+      "tags": {
+        "owner": "frontend-team",
+        "environment": "staging",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "fn-d454b200",
+      "type": "lambda",
+      "name": "dev-scheduler-9c9f",
+      "state": "active",
+      "region": "eu-west-1",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2024-03-26T15:56:45Z",
+      "tags": {
+        "owner": "frontend-team",
+        "environment": "sandbox",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "i-720f7d61a029",
+      "type": "ec2",
+      "name": "cron-62",
+      "state": "running",
+      "region": "us-east-2",
+      "instance_type": "c5.2xlarge",
+      "cost_per_hour": 0.34,
+      "launched_at": "2025-06-29T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "lb-7df499bf",
+      "type": "alb",
+      "name": "staging-alb-c387",
+      "state": "active",
+      "region": "us-west-2",
+      "instance_type": null,
+      "cost_per_hour": 0.008,
+      "launched_at": "2024-06-08T15:56:45Z",
+      "tags": {
+        "owner": "secops",
+        "environment": "dev"
+      }
+    },
+    {
+      "id": "i-107943bb7aec",
+      "type": "ec2",
+      "name": "staging-batch-71",
+      "state": "terminated",
+      "region": "us-west-2",
+      "instance_type": "t3.medium",
+      "cost_per_hour": 0.0416,
+      "launched_at": "2024-12-30T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "i-0c9de7746487",
+      "type": "ec2",
+      "name": "staging-monitor-10",
+      "state": "stopped",
+      "region": "us-east-1",
+      "instance_type": "t3.xlarge",
+      "cost_per_hour": 0.1664,
+      "launched_at": "2024-12-23T15:56:45Z",
+      "tags": {
+        "owner": "devops",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "i-a40c7ae29a71",
+      "type": "ec2",
+      "name": "prod-batch-98",
+      "state": "running",
+      "region": "eu-central-1",
+      "instance_type": "t3.small",
+      "cost_per_hour": 0.0208,
+      "launched_at": "2025-04-03T15:56:45Z",
+      "tags": {
+        "owner": "devops",
+        "environment": "prod",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "bucket-tfstate-uploads-4fd8",
+      "type": "s3",
+      "name": "tfstate-uploads-4fd8",
+      "state": "available",
+      "region": "ap-southeast-1",
+      "instance_type": null,
+      "cost_per_hour": 0.023,
+      "launched_at": "2025-12-10T15:56:45Z",
+      "tags": {
+        "owner": "devops",
+        "environment": "dev",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "i-d7089770424e",
+      "type": "ec2",
+      "name": "prod-ml-85",
+      "state": "stopped",
+      "region": "us-east-2",
+      "instance_type": "r5.xlarge",
+      "cost_per_hour": 0.252,
+      "launched_at": "2026-02-09T15:56:45Z",
+      "tags": {
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "i-63d1fa2e4b67",
+      "type": "ec2",
+      "name": "prod-build-71",
+      "state": "stopped",
+      "region": "us-west-2",
+      "instance_type": "t3.xlarge",
+      "cost_per_hour": 0.1664,
+      "launched_at": "2024-11-28T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "environment": "staging",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "db-5c40bd9ad7",
+      "type": "rds",
+      "name": "staging-mysql-07",
+      "state": "stopped",
+      "region": "eu-west-2",
+      "instance_type": "db.t3.large",
+      "cost_per_hour": 0.136,
+      "launched_at": "2025-04-04T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "fn-657e6fca",
+      "type": "lambda",
+      "name": "prod-cleanup-f36d",
+      "state": "active",
+      "region": "us-west-1",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2024-10-19T15:56:45Z",
+      "tags": {
+        "owner": "platform-team",
+        "environment": "staging",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "lb-7b6a27f5",
+      "type": "alb",
+      "name": "internal-alb-dd78",
+      "state": "active",
+      "region": "eu-central-1",
+      "instance_type": null,
+      "cost_per_hour": 0.008,
+      "launched_at": "2024-05-14T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "environment": "dev"
+      }
+    },
+    {
+      "id": "cache-d01aef",
+      "type": "elasticache",
+      "name": "dev-session-cache-04",
+      "state": "stopped",
+      "region": "us-east-2",
+      "instance_type": "cache.r6g.xlarge",
+      "cost_per_hour": 0.332,
+      "launched_at": "2024-12-21T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "environment": "prod",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "i-505636a2296a",
+      "type": "ec2",
+      "name": "prod-cron-06",
+      "state": "stopped",
+      "region": "us-west-1",
+      "instance_type": "r5.large",
+      "cost_per_hour": 0.126,
+      "launched_at": "2025-07-16T15:56:45Z",
+      "tags": {
+        "owner": "bob@example.com",
+        "environment": "dev",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "db-2759a64d36",
+      "type": "rds",
+      "name": "staging-primary-09",
+      "state": "stopped",
+      "region": "us-east-2",
+      "instance_type": "db.t3.micro",
+      "cost_per_hour": 0.017,
+      "launched_at": "2025-07-11T15:56:45Z",
+      "tags": {
+        "owner": "alice@example.com",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "lb-49ab097e",
+      "type": "alb",
+      "name": "internal-alb-f4fa",
+      "state": "active",
+      "region": "eu-west-1",
+      "instance_type": null,
+      "cost_per_hour": 0.008,
+      "launched_at": "2025-07-18T15:56:45Z",
+      "tags": {
+        "owner": "dave@example.com",
+        "environment": "dev",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "db-ea479b14b2",
+      "type": "rds",
+      "name": "dev-aurora-02",
+      "state": "available",
+      "region": "ap-northeast-1",
+      "instance_type": "db.r6g.xlarge",
+      "cost_per_hour": 0.48,
+      "launched_at": "2025-03-01T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "i-b51f2fdbffc5",
+      "type": "ec2",
+      "name": "log-38",
+      "state": "stopped",
+      "region": "us-east-1",
+      "instance_type": "t3.xlarge",
+      "cost_per_hour": 0.1664,
+      "launched_at": "2025-06-13T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "environment": "prod",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "bucket-cache-exports-df13",
+      "type": "s3",
+      "name": "cache-exports-df13",
+      "state": "available",
+      "region": "us-east-1",
+      "instance_type": null,
+      "cost_per_hour": 0.023,
+      "launched_at": "2024-06-14T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "environment": "dev",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "db-a100f13865",
+      "type": "rds",
+      "name": "dev-primary-05",
+      "state": "stopped",
+      "region": "eu-central-1",
+      "instance_type": "db.t3.medium",
+      "cost_per_hour": 0.068,
+      "launched_at": "2024-07-17T15:56:45Z",
+      "tags": {
+        "owner": "frontend-team",
+        "environment": "sandbox"
+      }
+    },
+    {
+      "id": "i-057fd1a8f563",
+      "type": "ec2",
+      "name": "infra-36",
+      "state": "running",
+      "region": "ap-southeast-1",
+      "instance_type": "r5.4xlarge",
+      "cost_per_hour": 1.008,
+      "launched_at": "2025-12-07T15:56:45Z",
+      "tags": {
+        "environment": "staging"
+      }
+    },
+    {
+      "id": "lb-3d89d3cc",
+      "type": "alb",
+      "name": "api-alb-05fc",
+      "state": "active",
+      "region": "us-east-1",
+      "instance_type": null,
+      "cost_per_hour": 0.008,
+      "launched_at": "2025-05-31T15:56:45Z",
+      "tags": {
+        "owner": "frontend-team",
+        "environment": "staging",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "db-25c9042611",
+      "type": "rds",
+      "name": "dev-mysql-01",
+      "state": "stopped",
+      "region": "eu-west-2",
+      "instance_type": "db.t3.large",
+      "cost_per_hour": 0.136,
+      "launched_at": "2024-10-01T15:56:45Z",
+      "tags": {
+        "owner": "dave@example.com",
+        "environment": "prod",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "cache-4a0fd6",
+      "type": "elasticache",
+      "name": "prod-queue-cache-05",
+      "state": "available",
+      "region": "ap-southeast-1",
+      "instance_type": "cache.t3.small",
+      "cost_per_hour": 0.034,
+      "launched_at": "2024-03-11T15:56:45Z",
+      "tags": {
+        "owner": "bob@example.com",
+        "environment": "prod",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "bucket-logs-299b",
+      "type": "s3",
+      "name": "logs-299b",
+      "state": "available",
+      "region": "eu-central-1",
+      "instance_type": null,
+      "cost_per_hour": 0.023,
+      "launched_at": "2024-07-07T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "environment": "dev",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "cache-dacb37",
+      "type": "elasticache",
+      "name": "dev-redis-01",
+      "state": "available",
+      "region": "eu-central-1",
+      "instance_type": "cache.r6g.xlarge",
+      "cost_per_hour": 0.332,
+      "launched_at": "2025-03-28T15:56:45Z",
+      "tags": {
+        "owner": "bob@example.com",
+        "environment": "sandbox",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "i-4fa7116b520f",
+      "type": "ec2",
+      "name": "dev-ml-86",
+      "state": "stopped",
+      "region": "eu-west-2",
+      "instance_type": "m5.large",
+      "cost_per_hour": 0.096,
+      "launched_at": "2024-04-23T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "environment": "sandbox",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "fn-a31d5c9c",
+      "type": "lambda",
+      "name": "staging-handler-9593",
+      "state": "active",
+      "region": "ap-northeast-1",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2024-06-12T15:56:45Z",
+      "tags": {
+        "owner": "dave@example.com",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "lb-450d962a",
+      "type": "alb",
+      "name": "canary-alb-d42b",
+      "state": "active",
+      "region": "us-east-1",
+      "instance_type": null,
+      "cost_per_hour": 0.008,
+      "launched_at": "2025-12-07T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "environment": "staging",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "fn-9e2c0176",
+      "type": "lambda",
+      "name": "staging-transform-245f",
+      "state": "active",
+      "region": "ap-southeast-1",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2025-01-10T15:56:45Z",
+      "tags": {
+        "owner": "ml-team",
+        "environment": "staging",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "i-a9843f03fcc4",
+      "type": "ec2",
+      "name": "prod-ml-37",
+      "state": "running",
+      "region": "us-east-1",
+      "instance_type": "m5.large",
+      "cost_per_hour": 0.096,
+      "launched_at": "2024-10-17T15:56:45Z",
+      "tags": {
+        "owner": "alice@example.com",
+        "environment": "staging",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "fn-6b671566",
+      "type": "lambda",
+      "name": "dev-validator-38a5",
+      "state": "active",
+      "region": "eu-central-1",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2025-05-18T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "environment": "sandbox",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "bucket-cache-7b56",
+      "type": "s3",
+      "name": "cache-7b56",
+      "state": "available",
+      "region": "us-east-2",
+      "instance_type": null,
+      "cost_per_hour": 0.023,
+      "launched_at": "2025-07-04T15:56:45Z",
+      "tags": {
+        "owner": "alice@example.com",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "cache-3c1a83",
+      "type": "elasticache",
+      "name": "staging-rate-limiter-03",
+      "state": "available",
+      "region": "eu-west-2",
+      "instance_type": "cache.t3.micro",
+      "cost_per_hour": 0.017,
+      "launched_at": "2024-05-19T15:56:45Z",
+      "tags": {
+        "owner": "frontend-team",
+        "environment": "staging",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "i-2c1fa799aeaf",
+      "type": "ec2",
+      "name": "staging-batch-78",
+      "state": "running",
+      "region": "eu-west-2",
+      "instance_type": "t3.xlarge",
+      "cost_per_hour": 0.1664,
+      "launched_at": "2025-10-07T15:56:45Z",
+      "tags": {
+        "owner": "bob@example.com",
+        "environment": "prod",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "fn-054af196",
+      "type": "lambda",
+      "name": "staging-scheduler-9517",
+      "state": "active",
+      "region": "ap-northeast-1",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2026-01-27T15:56:45Z",
+      "tags": {
+        "owner": "bob@example.com"
+      }
+    },
+    {
+      "id": "db-f7cdf1a0bf",
+      "type": "rds",
+      "name": "dev-primary-03",
+      "state": "stopped",
+      "region": "ap-northeast-1",
+      "instance_type": "db.r6g.2xlarge",
+      "cost_per_hour": 0.96,
+      "launched_at": "2024-06-24T15:56:45Z",
+      "tags": {
+        "owner": "frontend-team",
+        "environment": "dev",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "db-ca11a4baed",
+      "type": "rds",
+      "name": "staging-replica-01",
+      "state": "available",
+      "region": "us-east-2",
+      "instance_type": "db.m5.large",
+      "cost_per_hour": 0.171,
+      "launched_at": "2024-07-22T15:56:45Z",
+      "tags": {
+        "environment": "staging",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "db-46cdadba8a",
+      "type": "rds",
+      "name": "dev-aurora-02",
+      "state": "stopped",
+      "region": "ap-northeast-1",
+      "instance_type": "db.m5.large",
+      "cost_per_hour": 0.171,
+      "launched_at": "2025-03-05T15:56:45Z",
+      "tags": {
+        "owner": "platform-team",
+        "environment": "dev",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "i-321d1cde05c2",
+      "type": "ec2",
+      "name": "data-25",
+      "state": "stopped",
+      "region": "us-west-1",
+      "instance_type": "t3.large",
+      "cost_per_hour": 0.0832,
+      "launched_at": "2025-09-25T15:56:45Z",
+      "tags": {
+        "owner": "frontend-team",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "fn-cc33fce3",
+      "type": "lambda",
+      "name": "staging-handler-5bf9",
+      "state": "active",
+      "region": "ap-southeast-1",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2024-11-23T15:56:45Z",
+      "tags": {
+        "owner": "ml-team",
+        "environment": "sandbox",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "cache-24ad81",
+      "type": "elasticache",
+      "name": "prod-memcached-05",
+      "state": "stopped",
+      "region": "us-east-2",
+      "instance_type": "cache.r6g.xlarge",
+      "cost_per_hour": 0.332,
+      "launched_at": "2025-05-23T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "environment": "staging",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "fn-ee665613",
+      "type": "lambda",
+      "name": "prod-validator-d1ed",
+      "state": "active",
+      "region": "eu-west-2",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2025-11-29T15:56:45Z",
+      "tags": {
+        "environment": "dev",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "i-dc79e032f96c",
+      "type": "ec2",
+      "name": "cron-90",
+      "state": "running",
+      "region": "eu-west-1",
+      "instance_type": "t3.micro",
+      "cost_per_hour": 0.0104,
+      "launched_at": "2025-11-06T15:56:45Z",
+      "tags": {
+        "owner": "platform-team",
+        "environment": "staging",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "lb-a9b40592",
+      "type": "alb",
+      "name": "public-alb-1d78",
+      "state": "active",
+      "region": "us-east-2",
+      "instance_type": null,
+      "cost_per_hour": 0.008,
+      "launched_at": "2024-09-20T15:56:45Z",
+      "tags": {
+        "owner": "devops",
+        "environment": "prod",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "cache-af40c5",
+      "type": "elasticache",
+      "name": "staging-rate-limiter-01",
+      "state": "stopped",
+      "region": "us-east-2",
+      "instance_type": "cache.t3.micro",
+      "cost_per_hour": 0.017,
+      "launched_at": "2024-07-23T15:56:45Z",
+      "tags": {
+        "owner": "devops",
+        "environment": "staging",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "bucket-state-backups-daf7",
+      "type": "s3",
+      "name": "state-backups-daf7",
+      "state": "available",
+      "region": "us-west-1",
+      "instance_type": null,
+      "cost_per_hour": 0.023,
+      "launched_at": "2025-10-23T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "environment": "sandbox",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "db-546d70a4d0",
+      "type": "rds",
+      "name": "prod-postgres-01",
+      "state": "available",
+      "region": "eu-west-1",
+      "instance_type": "db.r6g.large",
+      "cost_per_hour": 0.24,
+      "launched_at": "2025-11-03T15:56:45Z",
+      "tags": {
+        "owner": "devops",
+        "environment": "sandbox",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "fn-8cb19d85",
+      "type": "lambda",
+      "name": "staging-sync-f77e",
+      "state": "active",
+      "region": "us-east-2",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2025-04-09T15:56:45Z",
+      "tags": {
+        "environment": "dev",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "fn-d5f4ff1a",
+      "type": "lambda",
+      "name": "dev-router-6b50",
+      "state": "active",
+      "region": "eu-west-2",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2024-10-01T15:56:45Z",
+      "tags": {
+        "environment": "staging",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "i-23a5f0275712",
+      "type": "ec2",
+      "name": "ci-05",
+      "state": "running",
+      "region": "eu-central-1",
+      "instance_type": "r5.4xlarge",
+      "cost_per_hour": 1.008,
+      "launched_at": "2025-04-23T15:56:45Z",
+      "tags": {
+        "environment": "dev",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "i-8e1cb39bf321",
+      "type": "ec2",
+      "name": "staging-proxy-64",
+      "state": "running",
+      "region": "ap-southeast-1",
+      "instance_type": "t3.micro",
+      "cost_per_hour": 0.0104,
+      "launched_at": "2025-12-11T15:56:45Z",
+      "tags": {
+        "environment": "dev"
+      }
+    },
+    {
+      "id": "bucket-tmp-8edb",
+      "type": "s3",
+      "name": "tmp-8edb",
+      "state": "available",
+      "region": "us-west-1",
+      "instance_type": null,
+      "cost_per_hour": 0.023,
+      "launched_at": "2025-03-05T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "environment": "staging",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "db-597f2e16b7",
+      "type": "rds",
+      "name": "staging-analytics-01",
+      "state": "stopped",
+      "region": "eu-central-1",
+      "instance_type": "db.t3.large",
+      "cost_per_hour": 0.136,
+      "launched_at": "2024-07-30T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "environment": "staging",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "i-eca2f6e01225",
+      "type": "ec2",
+      "name": "dev-infra-17",
+      "state": "terminated",
+      "region": "us-west-2",
+      "instance_type": "m5.2xlarge",
+      "cost_per_hour": 0.384,
+      "launched_at": "2025-03-21T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "environment": "dev",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "db-91a9929e5e",
+      "type": "rds",
+      "name": "prod-reporting-05",
+      "state": "available",
+      "region": "us-east-1",
+      "instance_type": "db.r6g.large",
+      "cost_per_hour": 0.24,
+      "launched_at": "2025-12-17T15:56:45Z",
+      "tags": {
+        "owner": "platform-team",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "db-4f7ca41077",
+      "type": "rds",
+      "name": "staging-postgres-09",
+      "state": "available",
+      "region": "eu-west-2",
+      "instance_type": "db.m5.large",
+      "cost_per_hour": 0.171,
+      "launched_at": "2024-06-27T15:56:45Z",
+      "tags": {
+        "owner": "frontend-team",
+        "environment": "dev"
+      }
+    },
+    {
+      "id": "bucket-exports-backups-c813",
+      "type": "s3",
+      "name": "exports-backups-c813",
+      "state": "available",
+      "region": "us-east-2",
+      "instance_type": null,
+      "cost_per_hour": 0.023,
+      "launched_at": "2025-06-10T15:56:45Z",
+      "tags": {
+        "owner": "bob@example.com",
+        "environment": "staging",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "i-6fedeb32f7e7",
+      "type": "ec2",
+      "name": "cron-79",
+      "state": "running",
+      "region": "eu-central-1",
+      "instance_type": "t3.micro",
+      "cost_per_hour": 0.0104,
+      "launched_at": "2024-10-09T15:56:45Z",
+      "tags": {
+        "owner": "bob@example.com",
+        "environment": "staging",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "lb-a4012456",
+      "type": "alb",
+      "name": "internal-alb-049d",
+      "state": "active",
+      "region": "us-east-1",
+      "instance_type": null,
+      "cost_per_hour": 0.008,
+      "launched_at": "2025-01-24T15:56:45Z",
+      "tags": {
+        "owner": "platform-team",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "db-8c4fa1f6c5",
+      "type": "rds",
+      "name": "prod-reporting-07",
+      "state": "available",
+      "region": "us-west-1",
+      "instance_type": "db.r6g.2xlarge",
+      "cost_per_hour": 0.96,
+      "launched_at": "2025-08-19T15:56:45Z",
+      "tags": {
+        "owner": "dave@example.com",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "cache-bc82e2",
+      "type": "elasticache",
+      "name": "prod-redis-02",
+      "state": "stopped",
+      "region": "eu-west-2",
+      "instance_type": "cache.t3.micro",
+      "cost_per_hour": 0.017,
+      "launched_at": "2025-09-25T15:56:45Z",
+      "tags": {
+        "owner": "alice@example.com"
+      }
+    },
+    {
+      "id": "db-705164eda9",
+      "type": "rds",
+      "name": "dev-primary-05",
+      "state": "available",
+      "region": "us-west-2",
+      "instance_type": "db.r6g.2xlarge",
+      "cost_per_hour": 0.96,
+      "launched_at": "2026-01-17T15:56:45Z",
+      "tags": {
+        "owner": "dave@example.com",
+        "environment": "sandbox",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "cache-0f1052",
+      "type": "elasticache",
+      "name": "dev-memcached-02",
+      "state": "stopped",
+      "region": "us-west-2",
+      "instance_type": "cache.r6g.xlarge",
+      "cost_per_hour": 0.332,
+      "launched_at": "2025-01-14T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "i-5a852e55cbab",
+      "type": "ec2",
+      "name": "staging-worker-72",
+      "state": "stopped",
+      "region": "ap-southeast-1",
+      "instance_type": "r5.large",
+      "cost_per_hour": 0.126,
+      "launched_at": "2025-08-26T15:56:45Z",
+      "tags": {
+        "owner": "secops",
+        "environment": "dev",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "db-b778eb498e",
+      "type": "rds",
+      "name": "staging-reporting-04",
+      "state": "stopped",
+      "region": "eu-west-2",
+      "instance_type": "db.r6g.large",
+      "cost_per_hour": 0.24,
+      "launched_at": "2025-10-12T15:56:45Z",
+      "tags": {
+        "owner": "ml-team",
+        "environment": "prod",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "i-4738eb2993a8",
+      "type": "ec2",
+      "name": "log-84",
+      "state": "terminated",
+      "region": "us-west-2",
+      "instance_type": "m5.large",
+      "cost_per_hour": 0.096,
+      "launched_at": "2026-01-16T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "environment": "sandbox",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "fn-6ee73f5a",
+      "type": "lambda",
+      "name": "dev-processor-c08e",
+      "state": "active",
+      "region": "us-east-2",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2024-05-12T15:56:45Z",
+      "tags": {
+        "owner": "dave@example.com",
+        "environment": "staging",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "i-f67efee091f4",
+      "type": "ec2",
+      "name": "staging-ml-05",
+      "state": "terminated",
+      "region": "ap-northeast-1",
+      "instance_type": "t3.medium",
+      "cost_per_hour": 0.0416,
+      "launched_at": "2024-09-20T15:56:45Z",
+      "tags": {
+        "owner": "bob@example.com",
+        "environment": "staging",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "fn-b054a39a",
+      "type": "lambda",
+      "name": "prod-scheduler-c5ba",
+      "state": "active",
+      "region": "eu-central-1",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2024-12-28T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "environment": "dev",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "fn-67459945",
+      "type": "lambda",
+      "name": "prod-processor-f7e0",
+      "state": "active",
+      "region": "us-west-2",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2026-01-06T15:56:45Z",
+      "tags": {
+        "environment": "prod",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "db-eecbaf53f7",
+      "type": "rds",
+      "name": "dev-replica-09",
+      "state": "stopped",
+      "region": "eu-west-2",
+      "instance_type": "db.t3.large",
+      "cost_per_hour": 0.136,
+      "launched_at": "2025-01-09T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "environment": "sandbox",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "db-85e1de382d",
+      "type": "rds",
+      "name": "dev-mysql-08",
+      "state": "stopped",
+      "region": "us-east-2",
+      "instance_type": "db.r6g.large",
+      "cost_per_hour": 0.24,
+      "launched_at": "2024-04-13T15:56:45Z",
+      "tags": {
+        "owner": "secops",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "i-2698a4040316",
+      "type": "ec2",
+      "name": "prod-infra-59",
+      "state": "terminated",
+      "region": "us-east-2",
+      "instance_type": "c5.large",
+      "cost_per_hour": 0.085,
+      "launched_at": "2024-09-02T15:56:45Z",
+      "tags": {
+        "owner": "platform-team",
+        "environment": "prod",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "i-2abf5e7e61fd",
+      "type": "ec2",
+      "name": "staging-ml-99",
+      "state": "running",
+      "region": "eu-west-2",
+      "instance_type": "t3.xlarge",
+      "cost_per_hour": 0.1664,
+      "launched_at": "2025-11-09T15:56:45Z",
+      "tags": {
+        "owner": "frontend-team",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "cache-f7b663",
+      "type": "elasticache",
+      "name": "prod-memcached-01",
+      "state": "available",
+      "region": "eu-west-2",
+      "instance_type": "cache.t3.small",
+      "cost_per_hour": 0.034,
+      "launched_at": "2025-10-03T15:56:45Z",
+      "tags": {
+        "owner": "ml-team",
+        "environment": "staging"
+      }
+    },
+    {
+      "id": "i-ce03109b0b63",
+      "type": "ec2",
+      "name": "gateway-79",
+      "state": "running",
+      "region": "us-east-1",
+      "instance_type": "t3.micro",
+      "cost_per_hour": 0.0104,
+      "launched_at": "2025-10-18T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "environment": "dev",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "lb-ef86489b",
+      "type": "alb",
+      "name": "internal-alb-9cd3",
+      "state": "active",
+      "region": "us-west-1",
+      "instance_type": null,
+      "cost_per_hour": 0.008,
+      "launched_at": "2024-06-07T15:56:45Z",
+      "tags": {
+        "environment": "sandbox",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "fn-626c7d4b",
+      "type": "lambda",
+      "name": "staging-handler-fac5",
+      "state": "active",
+      "region": "ap-southeast-1",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2026-01-10T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "environment": "sandbox",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "cache-3aed1b",
+      "type": "elasticache",
+      "name": "prod-rate-limiter-03",
+      "state": "available",
+      "region": "us-east-1",
+      "instance_type": "cache.t3.small",
+      "cost_per_hour": 0.034,
+      "launched_at": "2025-06-09T15:56:45Z",
+      "tags": {
+        "owner": "alice@example.com",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "i-9a33e4e33bbc",
+      "type": "ec2",
+      "name": "staging-api-98",
+      "state": "running",
+      "region": "us-west-2",
+      "instance_type": "r5.4xlarge",
+      "cost_per_hour": 1.008,
+      "launched_at": "2025-01-28T15:56:45Z",
+      "tags": {
+        "owner": "secops",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "db-45e7cbc535",
+      "type": "rds",
+      "name": "dev-primary-06",
+      "state": "available",
+      "region": "us-west-2",
+      "instance_type": "db.m5.large",
+      "cost_per_hour": 0.171,
+      "launched_at": "2025-10-12T15:56:45Z",
+      "tags": {
+        "owner": "platform-team",
+        "environment": "dev",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "lb-938f5c7b",
+      "type": "alb",
+      "name": "staging-alb-b433",
+      "state": "active",
+      "region": "ap-southeast-1",
+      "instance_type": null,
+      "cost_per_hour": 0.008,
+      "launched_at": "2024-11-24T15:56:45Z",
+      "tags": {
+        "owner": "frontend-team",
+        "environment": "dev",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "i-e8a00dfac6d3",
+      "type": "ec2",
+      "name": "build-24",
+      "state": "terminated",
+      "region": "us-west-1",
+      "instance_type": "r5.large",
+      "cost_per_hour": 0.126,
+      "launched_at": "2026-03-01T15:56:45Z",
+      "tags": {
+        "owner": "secops",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "bucket-cache-aeea",
+      "type": "s3",
+      "name": "cache-aeea",
+      "state": "available",
+      "region": "us-east-1",
+      "instance_type": null,
+      "cost_per_hour": 0.023,
+      "launched_at": "2026-03-04T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "i-f0dace11238d",
+      "type": "ec2",
+      "name": "dev-build-69",
+      "state": "running",
+      "region": "eu-central-1",
+      "instance_type": "t3.micro",
+      "cost_per_hour": 0.0104,
+      "launched_at": "2025-12-20T15:56:45Z",
+      "tags": {
+        "owner": "devops",
+        "environment": "sandbox",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "lb-adc16800",
+      "type": "alb",
+      "name": "web-alb-f3ad",
+      "state": "active",
+      "region": "us-west-1",
+      "instance_type": null,
+      "cost_per_hour": 0.008,
+      "launched_at": "2025-12-16T15:56:45Z",
+      "tags": {
+        "owner": "bob@example.com",
+        "environment": "sandbox"
+      }
+    },
+    {
+      "id": "bucket-tmp-e3eb",
+      "type": "s3",
+      "name": "tmp-e3eb",
+      "state": "available",
+      "region": "ap-southeast-1",
+      "instance_type": null,
+      "cost_per_hour": 0.023,
+      "launched_at": "2025-06-06T15:56:45Z",
+      "tags": {
+        "owner": "platform-team",
+        "environment": "prod"
+      }
+    },
+    {
+      "id": "db-f9cb6123d6",
+      "type": "rds",
+      "name": "staging-aurora-01",
+      "state": "stopped",
+      "region": "eu-west-2",
+      "instance_type": "db.t3.micro",
+      "cost_per_hour": 0.017,
+      "launched_at": "2025-02-10T15:56:45Z",
+      "tags": {
+        "owner": "frontend-team",
+        "environment": "prod",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "bucket-logs-6d5c",
+      "type": "s3",
+      "name": "logs-6d5c",
+      "state": "available",
+      "region": "eu-central-1",
+      "instance_type": null,
+      "cost_per_hour": 0.023,
+      "launched_at": "2025-04-10T15:56:45Z",
+      "tags": {
+        "owner": "platform-team",
+        "environment": "dev",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "fn-6c43146c",
+      "type": "lambda",
+      "name": "staging-notifier-8629",
+      "state": "active",
+      "region": "us-west-1",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2025-02-05T15:56:45Z",
+      "tags": {
+        "owner": "devops",
+        "environment": "dev",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "i-c116881189cd",
+      "type": "ec2",
+      "name": "cron-47",
+      "state": "running",
+      "region": "eu-west-1",
+      "instance_type": "t3.micro",
+      "cost_per_hour": 0.0104,
+      "launched_at": "2025-01-11T15:56:45Z",
+      "tags": {
+        "owner": "alice@example.com",
+        "environment": "prod"
+      }
+    },
+    {
+      "id": "cache-a24422",
+      "type": "elasticache",
+      "name": "dev-queue-cache-02",
+      "state": "available",
+      "region": "eu-central-1",
+      "instance_type": "cache.t3.small",
+      "cost_per_hour": 0.034,
+      "launched_at": "2025-05-08T15:56:45Z",
+      "tags": {
+        "owner": "bob@example.com",
+        "environment": "prod",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "db-7206d6d76d",
+      "type": "rds",
+      "name": "dev-primary-04",
+      "state": "stopped",
+      "region": "us-west-1",
+      "instance_type": "db.r6g.large",
+      "cost_per_hour": 0.24,
+      "launched_at": "2025-05-07T15:56:45Z",
+      "tags": {
+        "owner": "devops"
+      }
+    },
+    {
+      "id": "db-f4b7936d61",
+      "type": "rds",
+      "name": "prod-warehouse-07",
+      "state": "stopped",
+      "region": "us-west-2",
+      "instance_type": "db.m5.2xlarge",
+      "cost_per_hour": 0.384,
+      "launched_at": "2024-07-12T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "environment": "staging"
+      }
+    },
+    {
+      "id": "cache-74bdc6",
+      "type": "elasticache",
+      "name": "dev-rate-limiter-02",
+      "state": "available",
+      "region": "us-west-1",
+      "instance_type": "cache.t3.micro",
+      "cost_per_hour": 0.017,
+      "launched_at": "2024-05-31T15:56:45Z",
+      "tags": {
+        "owner": "ml-team",
+        "environment": "staging",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "i-7998ed60fbc9",
+      "type": "ec2",
+      "name": "ml-10",
+      "state": "running",
+      "region": "us-east-2",
+      "instance_type": "r5.large",
+      "cost_per_hour": 0.126,
+      "launched_at": "2025-06-29T15:56:45Z",
+      "tags": {
+        "environment": "dev",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "lb-5c113b8b",
+      "type": "alb",
+      "name": "api-alb-9aaf",
+      "state": "active",
+      "region": "us-west-2",
+      "instance_type": null,
+      "cost_per_hour": 0.008,
+      "launched_at": "2024-12-09T15:56:45Z",
+      "tags": {
+        "owner": "devops",
+        "environment": "sandbox",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "lb-6f1f2473",
+      "type": "alb",
+      "name": "canary-alb-8501",
+      "state": "active",
+      "region": "ap-southeast-1",
+      "instance_type": null,
+      "cost_per_hour": 0.008,
+      "launched_at": "2025-03-19T15:56:45Z",
+      "tags": {
+        "owner": "bob@example.com",
+        "environment": "prod",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "fn-aa2f3228",
+      "type": "lambda",
+      "name": "prod-cleanup-4c1d",
+      "state": "active",
+      "region": "ap-southeast-1",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2025-07-16T15:56:45Z",
+      "tags": {
+        "owner": "alice@example.com",
+        "environment": "staging",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "fn-034bc9c8",
+      "type": "lambda",
+      "name": "prod-sync-be76",
+      "state": "active",
+      "region": "eu-west-2",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2025-04-11T15:56:45Z",
+      "tags": {
+        "owner": "secops",
+        "environment": "sandbox",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "db-995d9db491",
+      "type": "rds",
+      "name": "dev-warehouse-07",
+      "state": "available",
+      "region": "eu-west-2",
+      "instance_type": "db.m5.2xlarge",
+      "cost_per_hour": 0.384,
+      "launched_at": "2025-11-10T15:56:45Z",
+      "tags": {
+        "owner": "secops",
+        "environment": "dev",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "i-699678ee2242",
+      "type": "ec2",
+      "name": "staging-proxy-66",
+      "state": "stopped",
+      "region": "us-east-1",
+      "instance_type": "m5.large",
+      "cost_per_hour": 0.096,
+      "launched_at": "2025-03-08T15:56:45Z",
+      "tags": {
+        "owner": "platform-team",
+        "environment": "sandbox",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "db-6d710c4482",
+      "type": "rds",
+      "name": "staging-primary-08",
+      "state": "stopped",
+      "region": "ap-southeast-1",
+      "instance_type": "db.m5.large",
+      "cost_per_hour": 0.171,
+      "launched_at": "2024-08-25T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "environment": "prod",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "i-d0b8f1dc4f75",
+      "type": "ec2",
+      "name": "dev-gateway-70",
+      "state": "running",
+      "region": "ap-southeast-1",
+      "instance_type": "t3.xlarge",
+      "cost_per_hour": 0.1664,
+      "launched_at": "2025-11-10T15:56:45Z",
+      "tags": {
+        "owner": "secops",
+        "environment": "staging"
+      }
+    },
+    {
+      "id": "lb-23305485",
+      "type": "alb",
+      "name": "canary-alb-5ba2",
+      "state": "active",
+      "region": "eu-west-1",
+      "instance_type": null,
+      "cost_per_hour": 0.008,
+      "launched_at": "2025-05-18T15:56:45Z",
+      "tags": {
+        "owner": "dave@example.com",
+        "environment": "dev",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "i-fd2d3bdca794",
+      "type": "ec2",
+      "name": "gateway-08",
+      "state": "stopped",
+      "region": "eu-central-1",
+      "instance_type": "t3.medium",
+      "cost_per_hour": 0.0416,
+      "launched_at": "2024-12-03T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "environment": "prod",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "cache-50cbb7",
+      "type": "elasticache",
+      "name": "staging-session-cache-04",
+      "state": "stopped",
+      "region": "eu-west-2",
+      "instance_type": "cache.r6g.large",
+      "cost_per_hour": 0.166,
+      "launched_at": "2026-01-05T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "environment": "sandbox",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "fn-975a01c7",
+      "type": "lambda",
+      "name": "staging-notifier-4d59",
+      "state": "active",
+      "region": "us-east-2",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2025-09-30T15:56:45Z",
+      "tags": {
+        "owner": "bob@example.com",
+        "environment": "sandbox",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "fn-e151aa0a",
+      "type": "lambda",
+      "name": "dev-notifier-ee4d",
+      "state": "active",
+      "region": "us-west-2",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2024-12-26T15:56:45Z",
+      "tags": {
+        "environment": "prod"
+      }
+    },
+    {
+      "id": "i-23a0bdf6216b",
+      "type": "ec2",
+      "name": "batch-10",
+      "state": "running",
+      "region": "us-east-2",
+      "instance_type": "t3.micro",
+      "cost_per_hour": 0.0104,
+      "launched_at": "2025-04-24T15:56:45Z",
+      "tags": {
+        "owner": "devops",
+        "environment": "dev",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "fn-a7ba26ad",
+      "type": "lambda",
+      "name": "dev-worker-f280",
+      "state": "active",
+      "region": "us-east-2",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2025-11-28T15:56:45Z",
+      "tags": {
+        "owner": "frontend-team",
+        "environment": "prod",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "fn-899cbda4",
+      "type": "lambda",
+      "name": "staging-cleanup-5241",
+      "state": "active",
+      "region": "ap-northeast-1",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2024-06-27T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "environment": "staging"
+      }
+    },
+    {
+      "id": "fn-1798ffe2",
+      "type": "lambda",
+      "name": "dev-scheduler-0ef7",
+      "state": "active",
+      "region": "eu-central-1",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2025-03-01T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "environment": "staging",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "i-400c8a86b189",
+      "type": "ec2",
+      "name": "prod-ci-02",
+      "state": "running",
+      "region": "us-east-2",
+      "instance_type": "t3.micro",
+      "cost_per_hour": 0.0104,
+      "launched_at": "2025-04-27T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "i-ada1bbd01679",
+      "type": "ec2",
+      "name": "data-76",
+      "state": "running",
+      "region": "us-west-1",
+      "instance_type": "c5.large",
+      "cost_per_hour": 0.085,
+      "launched_at": "2025-11-08T15:56:45Z",
+      "tags": {
+        "owner": "platform-team",
+        "environment": "staging"
+      }
+    },
+    {
+      "id": "i-8d45bdb1e568",
+      "type": "ec2",
+      "name": "dev-infra-67",
+      "state": "running",
+      "region": "us-east-2",
+      "instance_type": "t3.medium",
+      "cost_per_hour": 0.0416,
+      "launched_at": "2024-10-18T15:56:45Z",
+      "tags": {
+        "owner": "bob@example.com",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "i-2cea1b0d005e",
+      "type": "ec2",
+      "name": "staging-monitor-48",
+      "state": "running",
+      "region": "us-east-1",
+      "instance_type": "m5.2xlarge",
+      "cost_per_hour": 0.384,
+      "launched_at": "2024-08-21T15:56:45Z",
+      "tags": {
+        "environment": "sandbox",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "bucket-exports-e5d9",
+      "type": "s3",
+      "name": "exports-e5d9",
+      "state": "available",
+      "region": "us-east-2",
+      "instance_type": null,
+      "cost_per_hour": 0.023,
+      "launched_at": "2024-10-12T15:56:45Z",
+      "tags": {
+        "environment": "prod",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "db-dc41754cb3",
+      "type": "rds",
+      "name": "prod-replica-08",
+      "state": "available",
+      "region": "ap-southeast-1",
+      "instance_type": "db.t3.micro",
+      "cost_per_hour": 0.017,
+      "launched_at": "2025-08-22T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "environment": "staging",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "i-5def0adb1837",
+      "type": "ec2",
+      "name": "staging-web-70",
+      "state": "running",
+      "region": "us-west-1",
+      "instance_type": "m5.xlarge",
+      "cost_per_hour": 0.192,
+      "launched_at": "2024-03-12T15:56:45Z",
+      "tags": {
+        "owner": "ml-team",
+        "environment": "prod",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "db-98a690a24d",
+      "type": "rds",
+      "name": "staging-warehouse-02",
+      "state": "stopped",
+      "region": "eu-west-2",
+      "instance_type": "db.m5.large",
+      "cost_per_hour": 0.171,
+      "launched_at": "2025-04-19T15:56:45Z",
+      "tags": {
+        "owner": "bob@example.com",
+        "environment": "dev",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "i-17515c77d1c4",
+      "type": "ec2",
+      "name": "prod-worker-20",
+      "state": "terminated",
+      "region": "us-east-1",
+      "instance_type": "t3.large",
+      "cost_per_hour": 0.0832,
+      "launched_at": "2025-08-02T15:56:45Z",
+      "tags": {
+        "owner": "devops",
+        "environment": "staging",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "db-a4f067b37c",
+      "type": "rds",
+      "name": "dev-replica-01",
+      "state": "available",
+      "region": "us-east-2",
+      "instance_type": "db.r6g.2xlarge",
+      "cost_per_hour": 0.96,
+      "launched_at": "2026-02-26T15:56:45Z",
+      "tags": {
+        "owner": "platform-team",
+        "environment": "staging",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "db-94d01e72ed",
+      "type": "rds",
+      "name": "dev-warehouse-02",
+      "state": "available",
+      "region": "us-east-2",
+      "instance_type": "db.m5.large",
+      "cost_per_hour": 0.171,
+      "launched_at": "2026-01-26T15:56:45Z",
+      "tags": {
+        "owner": "bob@example.com",
+        "environment": "prod",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "lb-2324e093",
+      "type": "alb",
+      "name": "public-alb-d60a",
+      "state": "active",
+      "region": "eu-west-1",
+      "instance_type": null,
+      "cost_per_hour": 0.008,
+      "launched_at": "2024-10-16T15:56:45Z",
+      "tags": {
+        "owner": "alice@example.com",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "i-6ac3f806b7c5",
+      "type": "ec2",
+      "name": "cron-18",
+      "state": "stopped",
+      "region": "ap-northeast-1",
+      "instance_type": "t3.small",
+      "cost_per_hour": 0.0208,
+      "launched_at": "2025-04-15T15:56:45Z",
+      "tags": {
+        "owner": "alice@example.com",
+        "environment": "dev",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "i-ec0f8cff1a4d",
+      "type": "ec2",
+      "name": "staging-ci-04",
+      "state": "terminated",
+      "region": "us-east-1",
+      "instance_type": "m5.large",
+      "cost_per_hour": 0.096,
+      "launched_at": "2025-07-29T15:56:45Z",
+      "tags": {
+        "owner": "dave@example.com",
+        "environment": "sandbox",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "i-be0bf993fe74",
+      "type": "ec2",
+      "name": "dev-batch-95",
+      "state": "stopped",
+      "region": "us-east-1",
+      "instance_type": "t3.medium",
+      "cost_per_hour": 0.0416,
+      "launched_at": "2025-12-08T15:56:45Z",
+      "tags": {
+        "owner": "platform-team",
+        "environment": "staging",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "db-e32bed509e",
+      "type": "rds",
+      "name": "prod-primary-06",
+      "state": "available",
+      "region": "ap-northeast-1",
+      "instance_type": "db.t3.micro",
+      "cost_per_hour": 0.017,
+      "launched_at": "2025-03-02T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "environment": "dev"
+      }
+    },
+    {
+      "id": "fn-6a75b8e9",
+      "type": "lambda",
+      "name": "prod-router-55fb",
+      "state": "active",
+      "region": "eu-west-2",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2025-07-25T15:56:45Z",
+      "tags": {
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "fn-f6ff09ef",
+      "type": "lambda",
+      "name": "dev-scheduler-b2bf",
+      "state": "active",
+      "region": "us-west-2",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2024-05-25T15:56:45Z",
+      "tags": {
+        "owner": "dave@example.com",
+        "environment": "prod",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "i-55afdab503b5",
+      "type": "ec2",
+      "name": "prod-proxy-31",
+      "state": "running",
+      "region": "us-east-1",
+      "instance_type": "m5.large",
+      "cost_per_hour": 0.096,
+      "launched_at": "2026-01-20T15:56:45Z",
+      "tags": {
+        "owner": "alice@example.com",
+        "environment": "sandbox"
+      }
+    },
+    {
+      "id": "fn-7daa21d4",
+      "type": "lambda",
+      "name": "staging-worker-7681",
+      "state": "active",
+      "region": "eu-west-2",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2025-06-16T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "environment": "prod",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "i-ff5feb6a9605",
+      "type": "ec2",
+      "name": "prod-worker-71",
+      "state": "running",
+      "region": "eu-central-1",
+      "instance_type": "m5.xlarge",
+      "cost_per_hour": 0.192,
+      "launched_at": "2024-03-27T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "db-687001da71",
+      "type": "rds",
+      "name": "prod-analytics-01",
+      "state": "available",
+      "region": "us-west-1",
+      "instance_type": "db.r6g.xlarge",
+      "cost_per_hour": 0.48,
+      "launched_at": "2024-05-26T15:56:45Z",
+      "tags": {
+        "owner": "ml-team",
+        "environment": "prod",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "i-7a182e574734",
+      "type": "ec2",
+      "name": "gateway-61",
+      "state": "running",
+      "region": "us-west-1",
+      "instance_type": "t3.xlarge",
+      "cost_per_hour": 0.1664,
+      "launched_at": "2024-03-27T15:56:45Z",
+      "tags": {
+        "environment": "prod",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "bucket-cache-artifacts-8dd6",
+      "type": "s3",
+      "name": "cache-artifacts-8dd6",
+      "state": "available",
+      "region": "ap-northeast-1",
+      "instance_type": null,
+      "cost_per_hour": 0.023,
+      "launched_at": "2024-04-06T15:56:45Z",
+      "tags": {
+        "owner": "bob@example.com",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "fn-89f2f7f2",
+      "type": "lambda",
+      "name": "prod-scheduler-6d09",
+      "state": "active",
+      "region": "us-west-2",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2025-08-25T15:56:45Z",
+      "tags": {
+        "owner": "frontend-team",
+        "environment": "prod",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "i-295bc188d8e0",
+      "type": "ec2",
+      "name": "staging-ml-81",
+      "state": "terminated",
+      "region": "ap-northeast-1",
+      "instance_type": "c5.4xlarge",
+      "cost_per_hour": 0.68,
+      "launched_at": "2025-01-05T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "environment": "sandbox",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "i-914856679042",
+      "type": "ec2",
+      "name": "prod-ci-14",
+      "state": "stopped",
+      "region": "eu-central-1",
+      "instance_type": "c5.2xlarge",
+      "cost_per_hour": 0.34,
+      "launched_at": "2026-01-30T15:56:45Z",
+      "tags": {
+        "owner": "alice@example.com",
+        "environment": "dev"
+      }
+    },
+    {
+      "id": "db-0d447b1d2f",
+      "type": "rds",
+      "name": "staging-primary-06",
+      "state": "stopped",
+      "region": "eu-west-2",
+      "instance_type": "db.t3.micro",
+      "cost_per_hour": 0.017,
+      "launched_at": "2025-06-08T15:56:45Z",
+      "tags": {
+        "owner": "alice@example.com"
+      }
+    },
+    {
+      "id": "i-bcdd82482de0",
+      "type": "ec2",
+      "name": "staging-infra-53",
+      "state": "running",
+      "region": "us-west-2",
+      "instance_type": "t3.large",
+      "cost_per_hour": 0.0832,
+      "launched_at": "2026-01-10T15:56:45Z",
+      "tags": {
+        "owner": "secops",
+        "environment": "prod",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "i-576ea377f785",
+      "type": "ec2",
+      "name": "staging-proxy-36",
+      "state": "running",
+      "region": "us-east-2",
+      "instance_type": "m5.large",
+      "cost_per_hour": 0.096,
+      "launched_at": "2025-05-23T15:56:45Z",
+      "tags": {
+        "owner": "platform-team",
+        "environment": "sandbox",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "i-aa460cc0ea90",
+      "type": "ec2",
+      "name": "staging-ci-29",
+      "state": "running",
+      "region": "eu-west-1",
+      "instance_type": "r5.4xlarge",
+      "cost_per_hour": 1.008,
+      "launched_at": "2024-03-11T15:56:45Z",
+      "tags": {
+        "environment": "dev",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "fn-618ad5a9",
+      "type": "lambda",
+      "name": "staging-cleanup-47ad",
+      "state": "active",
+      "region": "eu-west-1",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2024-04-09T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "environment": "sandbox",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "bucket-state-archive-d4be",
+      "type": "s3",
+      "name": "state-archive-d4be",
+      "state": "available",
+      "region": "eu-west-1",
+      "instance_type": null,
+      "cost_per_hour": 0.023,
+      "launched_at": "2025-08-30T15:56:45Z",
+      "tags": {
+        "owner": "frontend-team",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "i-52074e6b9fd5",
+      "type": "ec2",
+      "name": "monitor-85",
+      "state": "terminated",
+      "region": "us-west-2",
+      "instance_type": "r5.xlarge",
+      "cost_per_hour": 0.252,
+      "launched_at": "2024-04-07T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "environment": "sandbox"
+      }
+    },
+    {
+      "id": "bucket-backups-state-e212",
+      "type": "s3",
+      "name": "backups-state-e212",
+      "state": "available",
+      "region": "eu-west-1",
+      "instance_type": null,
+      "cost_per_hour": 0.023,
+      "launched_at": "2024-08-15T15:56:45Z",
+      "tags": {
+        "owner": "frontend-team",
+        "environment": "dev"
+      }
+    },
+    {
+      "id": "i-d6e59710a997",
+      "type": "ec2",
+      "name": "staging-data-96",
+      "state": "running",
+      "region": "ap-northeast-1",
+      "instance_type": "t3.large",
+      "cost_per_hour": 0.0832,
+      "launched_at": "2025-11-08T15:56:45Z",
+      "tags": {
+        "environment": "sandbox",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "db-f5fef2d215",
+      "type": "rds",
+      "name": "prod-postgres-03",
+      "state": "available",
+      "region": "eu-west-2",
+      "instance_type": "db.m5.large",
+      "cost_per_hour": 0.171,
+      "launched_at": "2024-05-30T15:56:45Z",
+      "tags": {
+        "owner": "platform-team",
+        "environment": "prod",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "db-7c19a6f603",
+      "type": "rds",
+      "name": "dev-aurora-03",
+      "state": "available",
+      "region": "us-east-1",
+      "instance_type": "db.r6g.large",
+      "cost_per_hour": 0.24,
+      "launched_at": "2025-04-15T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "environment": "staging",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "i-b52692d44b95",
+      "type": "ec2",
+      "name": "staging-proxy-29",
+      "state": "terminated",
+      "region": "us-west-1",
+      "instance_type": "c5.4xlarge",
+      "cost_per_hour": 0.68,
+      "launched_at": "2025-03-25T15:56:45Z",
+      "tags": {
+        "owner": "bob@example.com",
+        "environment": "dev",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "i-3f3081bc6ac9",
+      "type": "ec2",
+      "name": "prod-ml-30",
+      "state": "stopped",
+      "region": "us-east-1",
+      "instance_type": "r5.xlarge",
+      "cost_per_hour": 0.252,
+      "launched_at": "2024-05-02T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "environment": "prod",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "i-872ba4aa492d",
+      "type": "ec2",
+      "name": "infra-16",
+      "state": "running",
+      "region": "ap-northeast-1",
+      "instance_type": "m5.xlarge",
+      "cost_per_hour": 0.192,
+      "launched_at": "2024-06-16T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "environment": "dev",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "i-df5628eb7301",
+      "type": "ec2",
+      "name": "staging-batch-34",
+      "state": "running",
+      "region": "ap-southeast-1",
+      "instance_type": "m5.2xlarge",
+      "cost_per_hour": 0.384,
+      "launched_at": "2025-10-09T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "i-f471204c5b1c",
+      "type": "ec2",
+      "name": "staging-bastion-59",
+      "state": "running",
+      "region": "us-east-1",
+      "instance_type": "t3.xlarge",
+      "cost_per_hour": 0.1664,
+      "launched_at": "2025-10-20T15:56:45Z",
+      "tags": {
+        "environment": "staging",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "bucket-cache-data-e1d2",
+      "type": "s3",
+      "name": "cache-data-e1d2",
+      "state": "available",
+      "region": "eu-central-1",
+      "instance_type": null,
+      "cost_per_hour": 0.023,
+      "launched_at": "2025-01-25T15:56:45Z",
+      "tags": {
+        "owner": "bob@example.com",
+        "environment": "dev",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "fn-fd1e7979",
+      "type": "lambda",
+      "name": "dev-sync-e22b",
+      "state": "active",
+      "region": "eu-west-2",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2024-06-22T15:56:45Z",
+      "tags": {
+        "owner": "platform-team",
+        "environment": "staging",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "fn-d8bb3fd8",
+      "type": "lambda",
+      "name": "staging-processor-71a0",
+      "state": "active",
+      "region": "us-east-2",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2024-12-22T15:56:45Z",
+      "tags": {
+        "environment": "staging",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "bucket-backups-tmp-e90e",
+      "type": "s3",
+      "name": "backups-tmp-e90e",
+      "state": "available",
+      "region": "ap-northeast-1",
+      "instance_type": null,
+      "cost_per_hour": 0.023,
+      "launched_at": "2024-11-15T15:56:45Z",
+      "tags": {
+        "owner": "bob@example.com",
+        "environment": "staging",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "fn-6d179175",
+      "type": "lambda",
+      "name": "prod-cleanup-5488",
+      "state": "active",
+      "region": "ap-southeast-1",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2024-05-10T15:56:45Z",
+      "tags": {
+        "owner": "platform-team",
+        "environment": "prod",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "fn-ae8a75dd",
+      "type": "lambda",
+      "name": "dev-handler-8dcf",
+      "state": "active",
+      "region": "ap-southeast-1",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2025-04-05T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "fn-5ac851e7",
+      "type": "lambda",
+      "name": "dev-cleanup-71a0",
+      "state": "active",
+      "region": "eu-central-1",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2025-11-21T15:56:45Z",
+      "tags": {
+        "owner": "ml-team",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "db-d35c0aa1e7",
+      "type": "rds",
+      "name": "prod-replica-08",
+      "state": "stopped",
+      "region": "ap-northeast-1",
+      "instance_type": "db.t3.medium",
+      "cost_per_hour": 0.068,
+      "launched_at": "2025-10-24T15:56:45Z",
+      "tags": {
+        "owner": "bob@example.com",
+        "environment": "prod",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "i-78e29b269e86",
+      "type": "ec2",
+      "name": "log-75",
+      "state": "stopped",
+      "region": "us-west-2",
+      "instance_type": "c5.large",
+      "cost_per_hour": 0.085,
+      "launched_at": "2025-06-03T15:56:45Z",
+      "tags": {
+        "owner": "alice@example.com",
+        "environment": "dev",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "fn-bdbea394",
+      "type": "lambda",
+      "name": "prod-worker-6bb4",
+      "state": "active",
+      "region": "eu-west-2",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2024-04-21T15:56:45Z",
+      "tags": {
+        "owner": "frontend-team",
+        "environment": "staging",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "cache-79a6bd",
+      "type": "elasticache",
+      "name": "staging-redis-05",
+      "state": "available",
+      "region": "eu-central-1",
+      "instance_type": "cache.r6g.large",
+      "cost_per_hour": 0.166,
+      "launched_at": "2026-02-25T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "environment": "prod",
+        "cost_center": "CC-1001"
+      }
+    },
+    {
+      "id": "fn-44db4c0d",
+      "type": "lambda",
+      "name": "prod-worker-a3c2",
+      "state": "active",
+      "region": "us-east-2",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2024-06-18T15:56:45Z",
+      "tags": {
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "cache-b066ca",
+      "type": "elasticache",
+      "name": "dev-memcached-03",
+      "state": "stopped",
+      "region": "us-east-1",
+      "instance_type": "cache.r6g.xlarge",
+      "cost_per_hour": 0.332,
+      "launched_at": "2026-02-25T15:56:45Z",
+      "tags": {
+        "owner": "ml-team",
+        "environment": "staging",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "fn-9cf42a22",
+      "type": "lambda",
+      "name": "dev-notifier-bac8",
+      "state": "active",
+      "region": "ap-northeast-1",
+      "instance_type": null,
+      "cost_per_hour": 0.0,
+      "launched_at": "2025-11-08T15:56:45Z",
+      "tags": {
+        "owner": "alice@example.com",
+        "environment": "prod",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "db-07e0e9cad4",
+      "type": "rds",
+      "name": "prod-aurora-05",
+      "state": "stopped",
+      "region": "ap-northeast-1",
+      "instance_type": "db.r6g.xlarge",
+      "cost_per_hour": 0.48,
+      "launched_at": "2025-03-09T15:56:45Z",
+      "tags": {
+        "owner": "data-team",
+        "environment": "dev",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "db-68133553c8",
+      "type": "rds",
+      "name": "dev-mysql-03",
+      "state": "stopped",
+      "region": "us-east-1",
+      "instance_type": "db.t3.large",
+      "cost_per_hour": 0.136,
+      "launched_at": "2025-11-13T15:56:45Z",
+      "tags": {
+        "environment": "dev",
+        "cost_center": "CC-4004"
+      }
+    },
+    {
+      "id": "db-6c14b08c88",
+      "type": "rds",
+      "name": "dev-postgres-06",
+      "state": "stopped",
+      "region": "us-east-1",
+      "instance_type": "db.r6g.large",
+      "cost_per_hour": 0.24,
+      "launched_at": "2025-05-11T15:56:45Z",
+      "tags": {
+        "environment": "staging",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "cache-8a3a3a",
+      "type": "elasticache",
+      "name": "prod-redis-05",
+      "state": "available",
+      "region": "us-west-2",
+      "instance_type": "cache.t3.micro",
+      "cost_per_hour": 0.017,
+      "launched_at": "2024-09-06T15:56:45Z",
+      "tags": {
+        "owner": "alice@example.com",
+        "environment": "prod"
+      }
+    },
+    {
+      "id": "i-10c89346a60a",
+      "type": "ec2",
+      "name": "dev-infra-05",
+      "state": "stopped",
+      "region": "us-east-1",
+      "instance_type": "t3.micro",
+      "cost_per_hour": 0.0104,
+      "launched_at": "2024-05-23T15:56:45Z",
+      "tags": {
+        "owner": "dave@example.com",
+        "environment": "prod"
+      }
+    },
+    {
+      "id": "lb-c41c76a7",
+      "type": "alb",
+      "name": "api-alb-b1e1",
+      "state": "active",
+      "region": "ap-northeast-1",
+      "instance_type": null,
+      "cost_per_hour": 0.008,
+      "launched_at": "2025-07-28T15:56:45Z",
+      "tags": {
+        "owner": "frontend-team",
+        "environment": "sandbox",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "db-f0d2096813",
+      "type": "rds",
+      "name": "dev-reporting-06",
+      "state": "available",
+      "region": "us-west-2",
+      "instance_type": "db.t3.large",
+      "cost_per_hour": 0.136,
+      "launched_at": "2025-01-12T15:56:45Z",
+      "tags": {
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "i-1a90cf8a1a43",
+      "type": "ec2",
+      "name": "dev-batch-25",
+      "state": "stopped",
+      "region": "ap-southeast-1",
+      "instance_type": "t3.medium",
+      "cost_per_hour": 0.0416,
+      "launched_at": "2025-04-06T15:56:45Z",
+      "tags": {
+        "owner": "devops",
+        "environment": "staging"
+      }
+    },
+    {
+      "id": "db-e579499556",
+      "type": "rds",
+      "name": "dev-reporting-02",
+      "state": "available",
+      "region": "eu-west-2",
+      "instance_type": "db.t3.medium",
+      "cost_per_hour": 0.068,
+      "launched_at": "2025-07-01T15:56:45Z",
+      "tags": {
+        "owner": "secops",
+        "environment": "sandbox",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "bucket-state-be75",
+      "type": "s3",
+      "name": "state-be75",
+      "state": "available",
+      "region": "eu-west-1",
+      "instance_type": null,
+      "cost_per_hour": 0.023,
+      "launched_at": "2024-10-28T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "environment": "prod",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "lb-4e110809",
+      "type": "alb",
+      "name": "api-alb-dd28",
+      "state": "active",
+      "region": "eu-central-1",
+      "instance_type": null,
+      "cost_per_hour": 0.008,
+      "launched_at": "2024-07-14T15:56:45Z",
+      "tags": {
+        "owner": "secops",
+        "environment": "prod",
+        "cost_center": "CC-9001"
+      }
+    },
+    {
+      "id": "db-3cb47868ad",
+      "type": "rds",
+      "name": "staging-aurora-07",
+      "state": "stopped",
+      "region": "us-west-1",
+      "instance_type": "db.m5.2xlarge",
+      "cost_per_hour": 0.384,
+      "launched_at": "2024-09-30T15:56:45Z",
+      "tags": {
+        "owner": "frontend-team",
+        "environment": "sandbox",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "i-bf0c343a8c6e",
+      "type": "ec2",
+      "name": "staging-ci-95",
+      "state": "running",
+      "region": "us-east-1",
+      "instance_type": "c5.2xlarge",
+      "cost_per_hour": 0.34,
+      "launched_at": "2024-05-15T15:56:45Z",
+      "tags": {
+        "owner": "devops",
+        "environment": "prod"
+      }
+    },
+    {
+      "id": "cache-9669e1",
+      "type": "elasticache",
+      "name": "dev-session-cache-05",
+      "state": "available",
+      "region": "eu-central-1",
+      "instance_type": "cache.r6g.large",
+      "cost_per_hour": 0.166,
+      "launched_at": "2025-07-25T15:56:45Z",
+      "tags": {
+        "owner": "carol@example.com",
+        "environment": "sandbox",
+        "cost_center": "CC-3003"
+      }
+    },
+    {
+      "id": "bucket-uploads-cache-0e73",
+      "type": "s3",
+      "name": "uploads-cache-0e73",
+      "state": "available",
+      "region": "ap-northeast-1",
+      "instance_type": null,
+      "cost_per_hour": 0.023,
+      "launched_at": "2024-05-21T15:56:45Z",
+      "tags": {
+        "owner": "ml-team",
+        "environment": "staging",
+        "cost_center": "CC-2002"
+      }
+    },
+    {
+      "id": "i-3cb7732d0092",
+      "type": "ec2",
+      "name": "prod-data-85",
+      "state": "terminated",
+      "region": "ap-northeast-1",
+      "instance_type": "t3.medium",
+      "cost_per_hour": 0.0416,
+      "launched_at": "2026-01-29T15:56:45Z",
+      "tags": {
+        "owner": "dave@example.com",
+        "environment": "staging",
+        "cost_center": "CC-1001"
       }
     }
   ]

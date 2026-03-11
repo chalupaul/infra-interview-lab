@@ -1,4 +1,5 @@
 docs/
+python/generate_data.py
 terraform/.terraform/
 terraform/.terraform.lock.hcl
 terraform/terraform.tfvars
