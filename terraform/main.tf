@@ -8,7 +8,23 @@ terraform {
 }
 
 provider "aws" {
-  region = var.r
+  region                      = var.r
+  access_key                  = "test"
+  secret_key                  = "test"
+  skip_credentials_validation = true
+  skip_metadata_api_check     = true
+  skip_requesting_account_id  = true
+
+  endpoints {
+    ec2            = var.localstack_endpoint
+    ecs            = var.localstack_endpoint
+    iam            = var.localstack_endpoint
+    logs           = var.localstack_endpoint
+    s3             = var.localstack_endpoint
+    elasticloadbalancing = var.localstack_endpoint
+    appautoscaling = var.localstack_endpoint
+    cloudwatch     = var.localstack_endpoint
+  }
 }
 
 # -----------------------------------------------

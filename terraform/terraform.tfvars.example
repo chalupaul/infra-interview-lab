@@ -1,11 +1,12 @@
 n   = "myapp"
 r   = "us-east-1"
-img = "123456789.dkr.ecr.us-east-1.amazonaws.com/myapp:latest"
+img = "nginx:latest"
 p   = 8080
 cnt = 2
 e   = "prod"
-vpc = "vpc-0abc123"
-sn  = ["subnet-0abc123", "subnet-0def456"]
+vpc = "vpc-00000001"
+sn  = ["subnet-00000001", "subnet-00000002"]
 mn  = 1
 mx  = 10
 tgt = 75
+# localstack_endpoint = "http://localhost:4566"  # default, no need to change

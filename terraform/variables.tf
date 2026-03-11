@@ -71,3 +71,9 @@ variable "tgt" {
   type        = number
   default     = 75
 }
+
+variable "localstack_endpoint" {
+  description = "localstack endpoint url"
+  type        = string
+  default     = "http://localhost:4566"
+}
